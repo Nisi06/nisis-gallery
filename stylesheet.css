@@ -1,0 +1,164 @@
+body {
+    background-color: #c1e3ed;
+}
+.header {
+    background-image: url("img/background-klein.jpg");
+    height: 30rem;
+}
+
+/* NAV_BAR */
+
+.nav img {
+    float: left;
+    width: 8%;
+    padding: 1rem;
+}
+.nav img::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.nav ul {
+    list-style-type: none;
+    color: black;
+    margin: 0;
+    padding: 1rem;
+    text-align: right;
+}
+.nav li {
+    display: inline-block;
+}
+.nav a {
+    text-decoration: none;
+    display: block;
+    padding: 0.5rem 1rem;
+    font-size: clamp(1.2rem, 2.6vw, 3rem);
+    color: black;
+    background-color: bisque;
+    border-radius: 5rem;
+    
+}
+.nav a:visited {
+    color: black;
+}
+.nav a:hover {
+    color: bisque;
+    background-color: black;
+    border-radius: 5rem;
+}
+
+@media (max-width: 550px) {
+    .nav img {
+        width: 2.5rem;
+    }
+}
+
+
+/* HOME */
+
+.header-text {
+    padding: 1rem;
+    
+}
+.headline {
+    font-size: clamp(3rem, 6.3vw, 6rem);
+    color: bisque;
+    text-shadow: 3px 2px black;
+    text-decoration: underline;
+}
+@media (max-width: 215px) {
+    .headline {
+        font-size: 1.8rem;
+    }
+}
+.description {
+    color: bisque;
+    width: 70%;
+    font-size: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 1rem;
+    padding: 1rem;
+}
+.special {
+    font-weight: bold;
+}
+
+@media (max-width: 410px) {
+    .description {
+        display: none;
+    }
+}
+
+
+.home-content {
+    text-align: center;
+    padding: 1rem;
+
+}
+.home-content a {
+    text-decoration: none;
+    font-size: clamp(3rem, 6.3vw, 6rem);
+    padding: 0rem 1rem 0 1rem;
+}
+.home-content a:visited {
+    color:black;
+}
+.home-content a:hover {
+    background-color: black;
+    color: bisque;
+    border-radius: 1rem;
+}
+@media (max-width: 240px) {
+    .home-content a {
+        font-size: 1.5rem;
+    }
+}
+.paintings {
+    display: flex;
+    justify-content: center;
+}
+.home-sections {
+    padding: 1rem;
+}
+.home-sections img{
+    width: 30%;
+}
+.text {
+    padding: 1rem 3rem 1rem 1rem;
+}
+.text p {
+    font-size: clamp(1.2rem, 2.8vw, 2.5rem);
+}
+.paintings ul {
+    list-style-type: none;
+}
+.text li {
+    font-size: 1.2rem;
+    padding: 0.5rem;
+}
+
+
+/* CONTACT */
+
+.contact {
+    background-color: bisque;
+    color: black;
+    display: flex;
+    justify-content: center;
+}
+.me {
+    padding: 1rem 3rem;
+}
+.personal {
+    padding: 1rem 3rem;
+}
+@media (max-width: 425px) {
+    .contact {
+        display: block;
+    }
+}
+@media (max-width: 255px) {
+    .me, .personal {
+        padding: 1rem;
+    }
+}

@@ -1,0 +1,157 @@
+body {
+    background-color: #c1e3ed;
+}
+.header-g {
+    background-image: url("../img/background-klein.jpg");
+    height: 25rem;
+}
+.logo-g {
+    width: 10%;
+    float: left;
+    padding: 1rem;
+}
+.logo.g::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+@media (max-width: 600px) {
+    .logo-g {
+        width: 3rem;
+    }
+}
+.nav-g ul {
+    list-style-type: none;
+    color: black;
+    margin: 0;
+    padding: 1rem;
+    text-align: right;
+}
+.nav-g li {
+    display: inline-block;
+}
+.nav-g a {
+    text-decoration: none;
+    display: block;
+    padding: 0.5rem 1rem;
+    font-size: clamp(1.2rem, 2.6vw, 3rem);
+    color: black;
+    background-color: bisque;
+    border-radius: 5rem;
+    
+}
+.nav-g a:visited {
+    color: black;
+}
+.nav-g a:hover {
+    color: bisque;
+    background-color: black;
+    border-radius: 5rem;
+}
+
+.headline-g h1 {
+    font-size: clamp(3rem, 6.3vw, 6rem);
+    color: bisque;
+    text-shadow: 3px 2px black;
+    text-decoration: underline;
+    padding: 1rem;
+}
+@media (max-width: 270px) {
+    .headline-g h1 {
+        font-size: 1.8rem;
+    }
+}
+
+.pictures {
+    padding: 3rem;
+    text-align: center;
+}
+.sub-heading h1, .sub-heading1 h1, .sub-heading2 h1, .sub-heading3 h1, .sub-heading4 h1 {
+    text-decoration: underline;
+    color: bisque;
+    background-color: black;
+    border-radius: 1rem;
+    padding: 0.5rem 0;
+    font-size: clamp(1.5rem, 3vw, 4rem);
+}
+@media (max-width: 220px) {
+    .sub-heading h1 {
+        background-color: #c1e3ed;
+        color:black;
+    }
+}
+@media (max-width: 260px) {
+    .sub-heading1 h1 {
+        background-color: #c1e3ed;
+        color:black;
+    }
+}
+@media (max-width: 220px) {
+    .sub-heading2 h1 {
+        background-color: #c1e3ed;
+        color:black;
+    }
+}
+@media (max-width: 265px) {
+    .sub-heading3 h1 {
+        background-color: #c1e3ed;
+        color:black;
+    }
+}
+@media (max-width: 270px) {
+    .sub-heading4 h1 {
+        background-color: #c1e3ed;
+        color:black;
+    }
+}
+.pics {
+    width: 300px;
+    max-height: 400px;
+    padding: 0.5rem 1rem;
+}
+.pics1 {
+    width: 300px;
+    max-height: 300px;
+    padding: 0.5rem 1rem;
+}
+.pics2 {
+    width: 400px;
+    max-height: 300px;
+}
+@media (max-width: 450px) {
+    .pics, .pics1, .pics2, .pics3 {
+        width: 100px;
+    }
+}
+
+.alignment {
+    padding-bottom: 5rem;
+}
+
+/* CONTACT */
+
+.contact {
+    background-color: bisque;
+    color: black;
+    display: flex;
+    justify-content: center;
+}
+.me {
+    padding: 1rem 3rem;
+}
+.personal {
+    padding: 1rem 3rem;
+}
+@media (max-width: 425px) {
+    .contact {
+        display: block;
+    }
+}
+@media (max-width: 255px) {
+    .me, .personal {
+        padding: 1rem;
+    }
+}
+
+
+
