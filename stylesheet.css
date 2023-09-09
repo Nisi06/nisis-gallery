@@ -27,12 +27,13 @@ body {
 }
 .nav li {
     display: inline-block;
+    padding: 0.25rem;
 }
 .nav a {
     text-decoration: none;
     display: block;
     padding: 0.5rem 1rem;
-    font-size: clamp(1.2rem, 2.6vw, 3rem);
+    font-size: clamp(1.0rem, 2.8vw, 3rem);
     color: black;
     background-color: bisque;
     border-radius: 5rem;
@@ -143,6 +144,12 @@ body {
     padding: 0.5rem;
 }
 
+@media (max-width: 490px) {
+    .pic-size {
+        display: none;
+    }
+}
+
 
 /* CONTACT */
 
@@ -159,14 +166,18 @@ body {
 .personal {
     padding: 1rem 3rem;
 }
-@media (max-width: 425px) {
-    .contact {
-        display: block;
-    }
-}
 @media (max-width: 255px) {
     .me, .personal {
         padding: 1rem;
+    }
+}
+@media (max-width: 370px) {
+    .contact {
+        font-size: 15px;
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+
     }
 }
 .github-logo {
